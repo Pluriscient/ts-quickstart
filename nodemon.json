@@ -1,0 +1,22 @@
+{
+	"verbose": true,
+	"debug": false,
+	"exec": "node --inspect=5858 -r ts-node/register ./src/index.ts",
+	"ignore": [
+		"mochawesome-report",
+		"node_modules",
+		"./test",
+		"**/*.d.ts",
+		"*.test.ts",
+		"*.spec.ts",
+		"fixtures/*",
+		"test/**/*",
+		"docs/*"
+	],
+	"events": {
+		"restart": "echo Don't insta-commit m8"
+	},
+	"watch": ["./src"],
+	"ext": "ts, gql",
+	"inspect": true
+}
